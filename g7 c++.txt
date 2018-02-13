@@ -1,0 +1,61 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+
+    int sum=0,put,put2 ;
+    while (sum<=100)
+    {
+        cout <<"player one play"<< "\n";
+        cin >>put ;
+        {
+            while (put>10 || put <1)
+            {
+                cout<<"THIS IS NOT LEGAL"<< "\n";
+                cout <<"play 1 more time " << "\n";
+                cin >> put ;
+            }
+            if (sum <=100)
+            {
+                sum+=put;
+                cout <<"SUM="<< sum <<"\n";
+            }
+            if (sum>=100)
+            {
+                cout<<"congratulations for player 1"<< "\n";
+                break;
+            }
+
+
+        }
+
+        {
+
+            cout <<"player two play"<<"\n";
+            cin>>put2;
+            while (put2>10 || put2<1)
+            {
+                cout <<"THIS IS NOT LEGAL" <<"\n";
+                cout <<"play 1 more time "<<"\n";
+                cin>>put2 ;
+            }
+
+            if (sum<=100)
+            {
+                sum+=put2;
+                cout <<"SUM=" <<sum << "\n";
+            }
+            if (sum>=100)
+            {
+                cout <<"congratulations for player 2"<<"\n";
+                break;
+            }
+
+
+        }
+
+    }
+}
